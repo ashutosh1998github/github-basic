@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button
+        class="btn btn-danger"
+        data-bs-toggle="collapse"
+        data-bs-target="#para1"
+      >
+        Click here to display Text
+      </button>
+
+      <p id="para1" class="collapse">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis hic harum
+        officiis incidunt totam quod expedita aperiam eveniet laboriosam,
+        delectus sequi molestias eos, dolor molestiae nulla necessitatibus
+        similique modi? Similique?
+      </p>
+
+      <br /><br /><br /><b><br /><br /><br /></b>
+      <div class="accordion" id="acc">
+        <div class="card">
+          <div
+            class="card-header"
+            data-bs-toggle="collapse"
+            data-bs-target="#body"
+          >
+            This is header
+          </div>
+          <div id="body" class="collapse" data-bs-parent="#acc">
+            <div class="card-body">This is body of the card</div>
+          </div>
+          <div class="card-footer">This is the footer of the card</div>
+        </div>
+        <br /><br /><br /><b><br /><br /><br /></b>
+        <div class="container">
+          <div class="card bg-success">
+            <div
+              class="card-header"
+              data-bs-toggle="collapse"
+              data-bs-target="#body1"
+            >
+              This is header
+            </div>
+            <div id="body1" class="collapse" data-bs-parent="#acc">
+              <div class="card-body bg-danger">This is body of the card</div>
+            </div>
+            <div class="card-footer">This is the footer of the card</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
